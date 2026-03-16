@@ -26,6 +26,9 @@ body,
   font-family: 'Inter', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Custom Scrollbar */
@@ -268,6 +271,10 @@ body,
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5),
+               0 2px 4px rgba(0, 0, 0, 0.3),
+               0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: -0.02em;
 }
 
 
@@ -311,6 +318,9 @@ body,
   color: #ffffff;
   margin: 0;
   font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4),
+               0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: -0.01em;
 }
 
 .timeline-date {
@@ -321,6 +331,8 @@ body,
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-weight: 500;
+  text-shadow: 0 1px 2px rgba(207, 158, 255, 0.2),
+               0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-company {
@@ -331,6 +343,8 @@ body,
   margin-bottom: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(207, 158, 255, 0.2),
+               0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-details {
@@ -341,11 +355,13 @@ body,
 
 .timeline-details li {
   font-family: 'Inter', sans-serif;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.8rem;
   padding-left: 1.5rem;
   position: relative;
   line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
 .timeline-details li::before {
@@ -420,6 +436,9 @@ body,
   color: #ffffff;
   margin: 0 0 1.5rem 0;
   padding-bottom: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4),
+               0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: -0.01em;
 }
 
 .skill-list {
@@ -437,4 +456,10 @@ body,
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   cursor: default;
+}
+
+/* ── Sections Wrapper ── */
+.sections-wrapper {
+  position: relative;
+  background-color: #000000;
 }

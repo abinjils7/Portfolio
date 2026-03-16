@@ -1,5 +1,4 @@
 import LaserFlow from './components/LaserFlow';
-import { useRef } from 'react';
 import './App.css';
 import './components/Sections.css';
 
@@ -48,12 +47,14 @@ function App() {
         </div>
       </div>
 
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
+      <div className="sections-wrapper">
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

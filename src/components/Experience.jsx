@@ -1,25 +1,7 @@
-import LightPillar from './LightPillar';
-
 const Experience = () => {
     return (
-        <section id="experience" className="section-container" style={{ position: 'relative' }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', overflow: 'hidden', borderRadius: '20px', pointerEvents: 'none' }}>
-                <LightPillar
-                    topColor="#3000f0"
-                    bottomColor="#c8b6c8"
-                    intensity={1}
-                    rotationSpeed={0.3}
-                    interactive={false}
-                    glowAmount={0.002}
-                    pillarWidth={3}
-                    pillarHeight={0.4}
-                    noiseIntensity={0.5}
-                    pillarRotation={25}
-                    quality="low"
-                />
-            </div>
-            <div style={{ position: 'relative', zIndex: 1 }}>
-                <h2 className="section-title">Experience & Education</h2>
+        <section id="experience" className="section-container">
+            <h2 className="section-title">Experience & Education</h2>
 
                 <div className="experience-block">
                     <h3 className="block-title">Experience</h3>
@@ -58,7 +40,6 @@ const Experience = () => {
                         <span className="cert-tag">C / C++ Programming</span>
                     </div>
                 </div>
-            </div>
         </section>
     );
 };
