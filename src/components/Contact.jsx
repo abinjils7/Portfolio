@@ -1,24 +1,40 @@
 const Contact = () => {
     return (
-        <section id="contact" className="section-container contact-section">
-            <div className="contact-content">
-                <h2 className="section-title">Get In Touch</h2>
-                <div className="contact-text-wrapper" style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                    <p className="contact-text">
-                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                    </p>
-                    <div className="contact-details" style={{ margin: '2rem 0', color: 'rgba(255,255,255,0.8)' }}>
-                        <p style={{ margin: '0.5rem 0' }}><strong>Email:</strong> <a href="mailto:abinjills0904@gmail.com" style={{ color: '#CF9EFF', textDecoration: 'none' }}>abinjills0904@gmail.com</a></p>
-                        <p style={{ margin: '0.5rem 0' }}><strong>Phone:</strong> +91 7012963729</p>
-                        <p style={{ margin: '0.5rem 0' }}><strong>Location:</strong> Wayanad, Kerala, India</p>
-                    </div>
+        <section id="contact" className="section-container section-light section-contact">
+            <div className="section-statement section-statement--center">
+                <h2 className="statement-text">
+                    Let's work together{' '}
+                    <br />
+                    and build something{' '}
+                    <br />
+                    <span className="statement-accent">great</span>
+                </h2>
+                <p className="statement-sub">
+                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <div className="statement-cta">
+                    <a href="mailto:abinjills0904@gmail.com" className="talk-btn">
+                        Let's Talk &rarr;
+                    </a>
                 </div>
-                <a href="mailto:abinjills0904@gmail.com" className="btn-primary contact-btn">
-                    Say Hello
-                </a>
+            </div>
 
-                <div className="social-links">
-                    <a href="https://github.com/abinjils7" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
+            <div className="contact-info-row">
+                <div className="contact-info-item">
+                    <span className="contact-info-label">Email</span>
+                    <a href="mailto:abinjills0904@gmail.com" className="contact-info-value">abinjills0904@gmail.com</a>
+                </div>
+                <div className="contact-info-item">
+                    <span className="contact-info-label">Phone</span>
+                    <span className="contact-info-value">+91 7012963729</span>
+                </div>
+                <div className="contact-info-item">
+                    <span className="contact-info-label">Location</span>
+                    <span className="contact-info-value">Wayanad, Kerala, India</span>
+                </div>
+                <div className="contact-info-item">
+                    <span className="contact-info-label">GitHub</span>
+                    <a href="https://github.com/abinjils7" target="_blank" rel="noopener noreferrer" className="contact-info-value">github.com/abinjils7</a>
                 </div>
             </div>
         </section>
@@ -26,4 +42,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
