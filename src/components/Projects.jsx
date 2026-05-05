@@ -5,7 +5,7 @@ const Projects = () => {
             category: "Real-Time Collaboration",
             description: "A Discord/Slack-inspired hybrid collaboration platform with real-time communication, task management, and team workspaces.",
             tech: ["MongoDB", "Express.js", "React.js", "Node.js", "TypeScript", "Socket.IO", "WebRTC"],
-            link: "https://github.com/Zynq-Hybrid-Collaboration-Platform",
+            link: "https://synq1.vercel.app/",
             status: "in-progress"
         },
         {
@@ -21,14 +21,14 @@ const Projects = () => {
             category: "Full Stack SaaS",
             description: "A full-stack SaaS platform that connects startups and investors, allowing startups to submit pitch videos and investors to review and respond.",
             tech: ["MongoDB", "Express.js", "React.js", "Node.js", "TypeScript", "Socket.IO", "WebRTC"],
-            link: "https://venture-capital-seven.vercel.app/"
+            link: "https://v-cclient.vercel.app/"
         },
         {
-            title: "Rivus",
+            title: "Rivus Car Rental",
             category: "Ecommerce",
-            description: "A complete ecommerce web application with secure authentication, product management, shopping cart, and order system.",
+            description: "A premium car rental platform with a focus on luxury aesthetic, smooth user experience, and robust booking management.",
             tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux Toolkit"],
-            link: "https://rivuscom.vercel.app"
+            link: "https://rivus-client.vercel.app/"
         },
         {
             title: "Fix Pro",
