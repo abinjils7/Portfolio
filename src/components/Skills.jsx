@@ -5,6 +5,7 @@ const Skills = () => {
         Database: ["MongoDB"],
         "Real-Time": ["Socket.IO", "WebRTC"],
         Tools: ["Git", "GitHub", "Vercel"],
+        "AI Agents": ["Antigravity", "Claude Code", "Cursor"],
         Concepts: ["MVC Architecture", "Auth & Authorization", "API Rate Limiting", "Responsive Design"]
     };
 

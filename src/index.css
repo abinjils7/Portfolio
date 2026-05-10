@@ -480,3 +480,20 @@ body,
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile Hero Buttons */
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0 1rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.65rem 0.5rem;
+    font-size: 0.8rem;
+    flex: 1 1 calc(50% - 0.6rem);
+    text-align: center;
+    white-space: nowrap;
+  }
+}

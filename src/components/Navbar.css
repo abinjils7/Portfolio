@@ -141,3 +141,9 @@
         margin-top: 1rem;
     }
 }
+@media (max-width: 768px) {
+    .navbar-container.scrolled {
+        width: 85%;
+        padding: 0.6rem 1rem;
+    }
+}
