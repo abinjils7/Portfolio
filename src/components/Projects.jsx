@@ -49,6 +49,7 @@ const Projects = () => {
     return (
         <section id="projects" className="section-container section-light">
             <div className="section-statement">
+                <span className="section-comment-label">// selected_projects</span>
                 <h2 className="statement-text">
                     Selected projects that{' '}
                     <br />
@@ -86,7 +87,7 @@ const Projects = () => {
                             {project.status === 'in-progress' && (
                                 <span className="status-badge-light">
                                     <span className="status-dot-light"></span>
-                                    Active
+                                    Ongoing
                                 </span>
                             )}
                             <span className="project-arrow">&rarr;</span>

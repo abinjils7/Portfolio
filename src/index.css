@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -7,11 +7,14 @@
 }
 
 :root {
-  --bg-primary: #060010;
-  --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --accent: #CF9EFF;
-  --accent-glow: rgba(207, 158, 255, 0.3);
+  --bg-primary: #0d0d0f;
+  --text-primary: #e0e0e2;
+  --text-secondary: #888888;
+  --accent: #7f77dd;
+  --accent-glow: rgba(127, 119, 221, 0.3);
+  --border-color: #222222;
+  --card-bg: #151515;
+  --teal: #5dcaa5;
 }
 
 html,
@@ -55,6 +58,8 @@ body,
   position: relative;
   overflow: hidden;
   background-color: var(--bg-primary);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,10 +78,10 @@ body,
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 2rem;
-  background: rgba(6, 0, 16, 0.6);
+  background: rgba(13, 13, 15, 0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
   border-radius: 50px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   pointer-events: auto;
@@ -84,16 +89,16 @@ body,
 }
 
 .nav-logo {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Fira Code', monospace, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-primary);
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
 .nav-logo span {
-  color: #7B3FE4;
+  color: var(--text-primary);
 }
 
 .nav-links {
@@ -105,10 +110,10 @@ body,
 }
 
 .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fira Code', monospace, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--text-secondary);
   text-decoration: none;
   letter-spacing: 0.03em;
   transition: color 0.3s ease;
@@ -122,7 +127,7 @@ body,
   left: 0;
   width: 0;
   height: 1.5px;
-  background: #7B3FE4;
+  background: var(--text-primary);
   transition: width 0.3s ease;
 }
 
@@ -137,14 +142,14 @@ body,
 }
 
 .nav-cta {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fira Code', monospace, sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--accent);
   text-decoration: none;
   padding: 0.55rem 1.6rem;
   border-radius: 50px;
-  background: linear-gradient(135deg, #7B3FE4, #411da5);
+  background: transparent; border: 1px solid var(--border-color);
   border: none;
   transition: all 0.3s ease;
   box-shadow: 0 2px 12px rgba(65, 29, 165, 0.3);
@@ -152,7 +157,7 @@ body,
 
 .nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(65, 29, 165, 0.5);
+  background: rgba(127, 119, 221, 0.1);
 }
 
 .hero-content {
@@ -172,7 +177,7 @@ body,
   font-family: 'Outfit', sans-serif;
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 0.5rem;
   line-height: 1.1;
   opacity: 0;
@@ -183,7 +188,7 @@ body,
   font-family: 'Outfit', sans-serif;
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
-  color: #ffffff;
+  color: var(--accent);
   margin: 0 0 1.5rem;
   line-height: 1.1;
   opacity: 0;
@@ -210,10 +215,10 @@ body,
 }
 
 .btn-primary {
-  background: #fff;
-  color: #000;
+  background: var(--accent);
+  color: #ffffff;
   padding: 0.8rem 1.8rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fira Code', monospace, sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
@@ -222,10 +227,10 @@ body,
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: #111111; border: 1px solid #333333;
+  color: var(--text-secondary);
   padding: 0.8rem 1.8rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fira Code', monospace, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   text-decoration: none;
@@ -239,7 +244,7 @@ body,
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #222222; color: var(--text-primary);
 }
 
 @keyframes fadeUp {
@@ -462,4 +467,16 @@ body,
 .sections-wrapper {
   position: relative;
   background-color: #f5f5f5;
+}
+/* Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }

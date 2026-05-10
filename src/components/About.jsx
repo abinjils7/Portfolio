@@ -2,6 +2,7 @@ const About = () => {
     return (
         <section id="about" className="section-container section-light">
             <div className="section-statement">
+                <span className="section-comment-label">// about_me</span>
                 <h2 className="statement-text">
                     Building scalable web{' '}
                     <br />

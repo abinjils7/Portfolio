@@ -2,6 +2,7 @@ const Contact = () => {
     return (
         <section id="contact" className="section-container section-light section-contact">
             <div className="section-statement section-statement--center">
+                <span className="section-comment-label" style={{textAlign: "center"}}>// let_s_connect</span>
                 <h2 className="statement-text">
                     Let's work together{' '}
                     <br />

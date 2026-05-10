@@ -11,6 +11,7 @@ const Skills = () => {
     return (
         <section id="skills" className="section-container section-light">
             <div className="section-statement">
+                <span className="section-comment-label">// tech_stack</span>
                 <h2 className="statement-text">
                     Technologies I work{' '}
                     <br />
